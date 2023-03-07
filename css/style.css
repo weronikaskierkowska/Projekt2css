@@ -1,0 +1,312 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	scroll-behavior: smooth;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 14px;
+}
+ul {
+	display: none;
+}
+nav {
+	background-color: #4e4e4e;
+	color: white;
+}
+.nav {
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+/* header */
+
+header {
+	height: 574px;
+	width: 100%;
+	background-image: url('../img/Tło-sekcji.png');
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+header h1 {
+	font-size: 36px;
+}
+.header-text {
+	height: 250px;
+	color: white;
+	font-size: 18px;
+	position: absolute;
+	top: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.header-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.header-button {
+	background-color: rgba(255, 255, 255, 0);
+	font-size: 18px;
+	padding: 15px 25px;
+	width: 50%;
+	border: 3px solid white;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+}
+
+/* main */
+.our-specialists {
+	padding: 50px 0;
+	text-align: center;
+}
+.our-specialists h2 {
+	margin-bottom: 20px;
+	color: #152d41;
+	font-size: 36px;
+}
+.bold-text {
+	font-weight: bold;
+}
+.specialist {
+	font-size: 18px;
+	padding: 0 14px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.specialist p {
+	padding: 10px 0;
+}
+.first-specialist-img,
+.second-specialist-img {
+	background-size: cover;
+	background-position: center;
+	width: 30%;
+	border-radius: 50%;
+	aspect-ratio: 1;
+	margin: 50px 0px;
+}
+.first-specialist-img {
+	background-image: url('../img/kobieta1.jfif');
+}
+
+.second-specialist-img {
+	background-image: url('../img/kobieta2.jpeg');
+}
+
+.blue-bcg {
+	background-color: #405d78;
+	width: 100%;
+	height: 100%;
+	padding: 50px 14px;
+}
+
+.offer-h2 {
+	color: white;
+	font-size: 26px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.offer-grid-container {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 16, 8% 16, 8% 16, 8% 16, 8% 16, 8% 16, 8%;
+	row-gap: 42px;
+	align-items: center;
+	justify-items: center;
+}
+.grid-item {
+	width: 330px;
+	height: 330px;
+	background-color: #f1f1f1;
+	box-shadow: 2px 2px 5px;
+	position: relative;
+}
+
+.circle {
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	background-color: #e07a64;
+	top: -11px;
+	left: -11px;
+}
+.grid-item p {
+	font-size: 26px;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+/* footer */
+.grey-bcg {
+	height: 147px;
+	width: 100%;
+	background-color: #4e4e4e;
+}
+
+.footer {
+	color: white;
+	height: 147px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.footer-text {
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.footer i {
+	color: white;
+	font-size: 31px;
+	margin: 0 10px;
+	font-family: 'Font Awesome\ 5 free', 'Font Awesome\ 5 brands';
+}
+
+@media (min-width: 1000px) {
+	header {
+		height: calc(100vh - 50px);
+	}
+	.header-text {
+		color: white;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.header-button {
+		width: 20%;
+		transition: color, background-color 1s ease;
+	}
+	.header-button:hover {
+		color: black;
+		background-color: white;
+	}
+
+	.container {
+		width: 960px;
+		padding: 0;
+	}
+	ul {
+		display: flex;
+	}
+	li {
+		list-style-type: none;
+		display: inline;
+		padding-left: 10px;
+	}
+
+	li a {
+		color: white;
+		text-decoration: none;
+	}
+
+	.contact a {
+		cursor: not-allowed;
+	}
+
+	/* main */
+	.our-specialists {
+		text-align: left;
+		padding: 50px 0;
+	}
+	.our-specialists h2 {
+		margin-bottom: 20px;
+	}
+	.bold-text {
+		font-weight: bold;
+	}
+	.specialist {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	.first-specialist-img,
+	.second-specialist-img {
+		background-size: cover;
+		background-position: center;
+		width: 33%;
+		border-radius: 50%;
+		aspect-ratio: 1;
+	}
+	.first-specialist-img {
+		background-image: url('../img/kobieta1.jfif');
+		margin-right: 60px;
+	}
+	.specialist:nth-of-type(even) {
+		flex-direction: row-reverse;
+	}
+	.second-specialist-img {
+		background-image: url('../img/kobieta2.jpeg');
+		margin-left: 60px;
+	}
+	.specialist-reverse-text {
+		text-align: right;
+	}
+	.offer-h2 {
+		text-align: left;
+		font-size: 36px;
+	}
+	.offer-grid-container {
+		width: 720px;
+		height: 450px;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 30% 30% 30%;
+		grid-template-rows: 50% 50%;
+		row-gap: 0px;
+		align-items: center;
+		justify-items: center;
+		justify-content: space-around;
+	}
+	.grid-item {
+		width: 198px;
+		height: 198px;
+		background-color: #f1f1f1;
+		box-shadow: 2px 2px 5px;
+		position: relative;
+		transition: all 0.5s ease;
+	}
+	.grid-item:hover {
+		transform: scale(1.05);
+	}
+	.blue-bcg {
+		padding: 50px 0px;
+	}
+	/* footer */
+	.grey-bcg {
+		height: 71px;
+		background-color: #4e4e4e;
+	}
+
+	.footer {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: row;
+	}
+	.footer-text {
+		font-size: 18px;
+		font-weight: 700;
+	}
+}
